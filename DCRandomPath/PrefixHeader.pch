@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  DCRandomPath
+//
+//  Created by chy on 2017/4/7.
+//  Copyright © 2017年 Chy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// MARK: - Preprocesser defines
+//------------------------------------------------------------------------------
+#define LocalizedString(string) NSLocalizedString(string, nil)
+#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define IS_IPHONE_4S (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)480) < DBL_EPSILON)
+#define IS_LESS_IPHONE_5S (fabs((double)[[UIScreen mainScreen] bounds].size.width - (double)320) < DBL_EPSILON)
+
+#endif /* PrefixHeader_pch */
